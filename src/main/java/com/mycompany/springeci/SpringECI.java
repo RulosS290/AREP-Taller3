@@ -34,6 +34,36 @@ public class SpringECI {
         String servicename = path.substring(4);
         System.out.println("Service name: " + servicename);
         
+        serviceurl = new URL("http://localhost:8080/App/PI");
+        path = serviceurl.getPath();
+        System.out.println("Path: " + path);
+        servicename = path.substring(4);
+        System.out.println("Service name: " + servicename);
+        
+        serviceurl = new URL("http://localhost:8080/App/light-speed");
+        path = serviceurl.getPath();
+        System.out.println("Path: " + path);
+        servicename = path.substring(4);
+        System.out.println("Service name: " + servicename);
+        
+        serviceurl = new URL("http://localhost:8080/App/planck-constant");
+        path = serviceurl.getPath();
+        System.out.println("Path: " + path);
+        servicename = path.substring(4);
+        System.out.println("Service name: " + servicename);
+        
+        serviceurl = new URL("http://localhost:8080/App/gravitational-constant");
+        path = serviceurl.getPath();
+        System.out.println("Path: " + path);
+        servicename = path.substring(4);
+        System.out.println("Service name: " + servicename);
+        
+        serviceurl = new URL("http://localhost:8080/App/avogadro-number");
+        path = serviceurl.getPath();
+        System.out.println("Path: " + path);
+        servicename = path.substring(4);
+        System.out.println("Service name: " + servicename);
+        
         Method ms = services.get(servicename);
         ms.invoke(ms);
     }
