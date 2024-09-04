@@ -21,11 +21,6 @@ public class HelloController {
         return "Hello World!";
     }
 
-    @GetMapping("/greet")
-    public String greet(@RequestParam("name") String name) {
-        return "Hello, " + name + "!";
-    }
-
     @GetMapping("/index")
     public byte[] getHtmlPage() throws IOException {
         Path path = Paths.get("target/classes/webroot/index.html");
