@@ -51,3 +51,25 @@ mvn test
 ```bash
 java -cp target/classes/ co.edu.microspringboot.MicroSpringBoot co.edu.microspringboot.controllers.HelloController
 ```
+
+## Funcionalidad
+
+
+
+
+## Ejecutando pruebas
+
+```bash
+mvn test
+```
+
+
+## Arquitectura del Proyecto
+
+
+## Autores
+
+Daniel Santiago Torres Acosta [https://github.com/RulosS290](https://github.com/RulosS290)
+
+## Agradecimientos
+Daniel Benavides
