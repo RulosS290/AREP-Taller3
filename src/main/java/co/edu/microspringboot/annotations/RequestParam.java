@@ -5,10 +5,15 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.PARAMETER) // Aplica a parámetros de métodos
-@Retention(RetentionPolicy.RUNTIME) // Disponible en tiempo de ejecución
+/**
+ * Annotation to bind a method parameter to a request parameter.
+ * 
+ * - `value()`: Name of the request parameter.
+ * - `defaultValue()`: Default value if the parameter is not provided.
+ */
+@Target(ElementType.PARAMETER) 
+@Retention(RetentionPolicy.RUNTIME) 
 public @interface RequestParam {
     String value();
-    String defaultValue()  default "";;
+    String defaultValue() default "";
 }
-

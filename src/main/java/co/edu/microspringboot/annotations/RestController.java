@@ -6,9 +6,14 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
 
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
+/**
+ * Annotation to mark a class as a REST controller.
+ * Classes annotated with `@RestController` can handle HTTP requests
+ * and return data, typically in JSON format.
+ */
+@Target(ElementType.TYPE) 
+@Retention(RetentionPolicy.RUNTIME) 
 public @interface RestController {
-    
 }
+
 

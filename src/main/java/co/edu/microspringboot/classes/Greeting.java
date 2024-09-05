@@ -1,19 +1,37 @@
 package co.edu.microspringboot.classes;
 
+/**
+ * Represents a greeting message.
+ */
 public class Greeting {
-    private final long id;
-    private final String content;
+    private String content;
 
-    public Greeting(long id, String content) {
-        this.id = id;
+    /**
+     * Constructs a new Greeting with the specified content.
+     * 
+     * @param content The content of the greeting
+     */
+    public Greeting(String content) {
         this.content = content;
     }
 
-    public long getId() {
-        return id;
-    }
-
+    /**
+     * Gets the content of the greeting.
+     * 
+     * @return The content of the greeting
+     */
     public String getContent() {
         return content;
     }
+
+    /**
+     * Sets the content of the greeting.
+     * 
+     * @param content The new content of the greeting
+     */
+    public void setContent(String content) {
+        this.content = content;
+    }
 }
+
+
